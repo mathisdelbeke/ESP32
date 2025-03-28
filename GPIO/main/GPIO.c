@@ -58,7 +58,7 @@ void app_main(void)
     xTaskCreate(gpio_task, "gpio_task", 2048, NULL, 10, NULL);
 
     while(1) {
-        //sim
+        // Other work
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
